@@ -3,7 +3,7 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Caitlin Coverstone.
 """
 
 ########################################################################
@@ -23,7 +23,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 import random
 
-
 def main():
     """
     Makes a TurtleWindow,
@@ -34,9 +33,12 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
+    turtle5_6()
+
 
     window.close_on_mouse_click()
 
@@ -70,8 +72,7 @@ def turtle2():
     # Keep track of where I am, to go back to it at the end.
     # Then choose a RANDOM starting point for the motion in here.
     i_began_here = rg.Point(grace.x_cor(), grace.y_cor())
-    i_am_going_here = rg.Point(random.randrange(-500, 500),
-                               random.randrange(-300, 0))
+    i_am_going_here = rg.Point(random.randrange(-500, 500),random.randrange(-300, 0))
     grace.pen_up()
     grace.go_to(i_am_going_here)
     grace.pen_down()
@@ -102,31 +103,59 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+def  turtle4():
+    jon = rg.SimpleTurtle()
+    jon.pen = rg.Pen('pink', 30)
+
+    jon.forward(300)
+    jon.left(45)
+
+def  turtle5_6():
+    jack = rg.SimpleTurtle()
+    jack.pen = rg.Pen('green', 10)
+
+    jack.left(90)
+    jack.forward(100)
+
+    bob = rg.SimpleTurtle()
+    bob.pen = rg.Pen('yellow', 80)
+
+    bob.right(90)
+    bob.forward(50)
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
 #     -- For each function definition:
 #          -- Where does that function definition begin?
+#               after "def" or indentation
 #             Where does it end?
+#                when indentation ends
 #     -- How many times does   main   call the   turtle1   function?
 #            (Answer: 1)
 #     -- How many times does   main   call the   turtle2   function?
 #            (Hint: the answer is NOT 1.)
+#               2
 #     -- What line of code calls the   main   function?
 #            (Answer: look at the LAST line of this module, far below.)
-#
+#               227
 #     ** ASK QUESTIONS if you are uncertain. **
 #
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
 #       -- WHEN does the code in   main   run?
+#               after all the functions are defined, line 227 calls it to be
+#               run
 #       -- WHEN does the code in   turtle1   run?
+#                            35
 #                    the code in   turtle2   run?
+#                            37 and 38
 #                    the code in   turtle3   run?
+#                            36
 #       -- For each of the above, WHY does that code run when it does?
+#                   because the function is called on those lines
 #
 #     ** ASK QUESTIONS if you are uncertain. **
 #
@@ -137,7 +166,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +196,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +212,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #

@@ -251,7 +251,29 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
 
+    turtle_a = rg.SimpleTurtle()
+    turtle_a.pen = rg.Pen('blue', 5)
+    turtle_a.backward(150)
+    turtle_a.speed = 1
+    draw_many_squares(turtle_a, 2, 100, 30)
+    #twisted from previous degrees??
+
+    turtle_a.speed = 5
+    turtle_a.pen = rg.Pen('red', 5)
+    draw_many_squares(turtle_a, 10, 50, 15)
+
+    turtle_a.speed = 100
+    turtle_a.pen = rg.Pen('red', 35)
+    draw_many_squares(turtle_a, 8, 300, 60)
+
+    #new pen
+
+    turtle_a.backward(200)
+
+    turtle_a.draw_circle(30)
+    turtle_a.draw_square(50)
     
+
 
     ####################################################################
     # TODO: 5. Implement this function, per its doc-string above.

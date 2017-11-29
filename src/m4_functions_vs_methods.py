@@ -76,14 +76,14 @@ def main():
     #   Second number: bigger means slower.
     window.tracer(1, 1)
 
-    jump_and_move_turtle(100, 50, 200, -100)
+    #jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
-    draw_many_squares(turtle, 3, 75, 15)
-    turtle3()
+    #draw_many_squares(turtle, 3, 75, 15)
+    #turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-    try_methods()
-    try_functions()
+    #try_methods()
+    #try_functions()
     try_methods_and_functions()
 
     window.close_on_mouse_click()
@@ -256,27 +256,24 @@ def try_methods_and_functions():
     turtle_a.backward(150)
     turtle_a.speed = 1
     draw_many_squares(turtle_a, 2, 100, 30)
-    #twisted from previous degrees??
 
     turtle_a.speed = 5
-    turtle_a.pen = rg.Pen('red', 5)
+    turtle_a.pen.color = 'red'
     draw_many_squares(turtle_a, 10, 50, 15)
 
     turtle_a.speed = 100
-    turtle_a.pen = rg.Pen('red', 35)
+    turtle_a.pen.thickness = 35
     draw_many_squares(turtle_a, 8, 300, 60)
 
-    #new pen
-
+    turtle_a.pen2 = rg.Pen('black', 3)
     turtle_a.backward(200)
-
     turtle_a.draw_circle(30)
     turtle_a.draw_square(50)
-    
+
 
 
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!

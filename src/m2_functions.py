@@ -8,7 +8,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -37,7 +37,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
-    turtle5_6()
+    turtle5()
 
 
     window.close_on_mouse_click()
@@ -110,7 +110,7 @@ def  turtle4():
     jon.forward(300)
     jon.left(45)
 
-def  turtle5_6():
+def  turtle5():
     jack = rg.SimpleTurtle()
     jack.pen = rg.Pen('green', 10)
 
@@ -151,9 +151,9 @@ def  turtle5_6():
 #       -- WHEN does the code in   turtle1   run?
 #                            35
 #                    the code in   turtle2   run?
-#                            37 and 38
+#                            38 and 39
 #                    the code in   turtle3   run?
-#                            36
+#                            37
 #       -- For each of the above, WHY does that code run when it does?
 #                   because the function is called on those lines
 #

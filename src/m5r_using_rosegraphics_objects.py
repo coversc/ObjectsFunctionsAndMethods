@@ -26,17 +26,16 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              up
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#             ??  radius = 50
-#               circle = rg.Circle(center_point, radius)
+#             window = rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            300
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#
+#              window = rg.RoseWindow(100,50)
 #
 #
 #     e. Use the DOT trick to answer the following:
@@ -70,7 +69,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 
 
-
+rg.RoseWindow()
 def main():
     """
     Uses ROSEGRAPHICS to demonstrate:

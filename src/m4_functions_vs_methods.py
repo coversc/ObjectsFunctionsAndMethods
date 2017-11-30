@@ -76,14 +76,14 @@ def main():
     #   Second number: bigger means slower.
     window.tracer(1, 1)
 
-    #jump_and_move_turtle(100, 50, 200, -100)
+    jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
-    #draw_many_squares(turtle, 3, 75, 15)
-    #turtle3()
+    draw_many_squares(turtle, 3, 75, 15)
+    turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-    #try_methods()
-    #try_functions()
+    try_methods()
+    try_functions()
     try_methods_and_functions()
 
     window.close_on_mouse_click()
